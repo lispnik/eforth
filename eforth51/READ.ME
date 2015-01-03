@@ -1,0 +1,46 @@
+                                        October 25, 1990
+
+Dear eForth User:
+
+eForth is a small portable Forthdesign for a wide range of
+microprocessors.  This implementation for 8051/31 microcontroller
+on an IBM-PC/XT/AT personal computer demonstrates the poratbility
+of the eForth Model. The MASM source file is provided so that you can
+easily rewrite it for your target 8051 system.
+
+The files on this diskette are:
+
+EFORTH.ASM      The source code of eForth for 8051.
+EFORTH.SRC      The Forth source of eForth Model.
+EFORTH.GLO      The glossary of words in eForth.
+EFORTH.EXE      The binary code of the 8051 eForth.
+READ.ME         This file.
+
+The assembly commands are:
+
+>MASM EFORTH;
+>LINK EFORTH;
+
+The binary code in EFORTH.EXE can be programmed into an EPROM.
+However, the actual code is offset by 512 bytes from the beginning
+of the .EXE file.  You have to shift it back so that the code
+will be place at the correct location.
+
+An excellent book 'Embedded Controller Forth for the 8051 Family'
+by W. H. Payne is available from Academic Press.  I would like to point
+out that it takes a whole book to explain how to build your 8051
+Forth using metacompilation technique.  This is what I wanted to avoid
+by presenting eForth in MASM assembler.  You will be the judge to
+decide which approach is better suited for your needs.
+
+                                        C. H. Ting
+                                        156 14th Avenue
+                                        San Mateo, CA 94402
+                                        (415) 571-7639
+
+This disk and the companion manual '8051 eForth Implementation Notes'
+are available from Offete enterprises, Inc., 1306 South B Street,
+San Mateo, CA 94402, (415) 574-8250 for $25.  The other implementation
+8086 eForth and its manual 'eForth Implementation Guide' are also
+distributed by Offete for $25.
+
